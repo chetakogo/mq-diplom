@@ -35,6 +35,10 @@
     margin-right: auto;
   }
   
+  .hamburger-button {
+    display: none;
+  }
+
   .logo {
     z-index: 2;
   }
@@ -56,7 +60,7 @@
   }
   
   .menu-list-item:nth-child(n+2) {
-    margin-left: 35px;
+    padding-left: 35px;
   }
   
   .menu-link {
@@ -70,10 +74,12 @@
   
   .tittle-text {
     margin-top: 110px;
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title-name {
-    width: 690px;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 45px;
@@ -944,10 +950,12 @@
  @media (min-width: 641px) and (max-width: 1199px), (max-width: 640px) and (orientation: landscape) {
   .container {
     box-sizing: border-box;
-    max-width: 698px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
      }
 
   .menu {
@@ -987,11 +995,14 @@
     background: #ffffff;
     }
 
-  .title-name {
+  .tittle-text {
     width: 620px;
-    font-size: 40px;
     margin-top: 105px;
-    line-height: 1.375; 
+    }
+
+    .title-name {
+      font-size: 40px;
+      line-height: 1.375; 
     }
           
   .trends__container {
@@ -1021,17 +1032,21 @@
     }
 
   .content-post {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
 
   .content-image {
-   max-width: 393px;
-  }
+   width: 100%;
+   }
 
+   .content-post:nth-child(n+2) {
+    margin-top: 0;
+     }
   .content-block {
+    width: 100%;
     margin-top: 16px;
-  }
+    }
 
   .content-meta {
     margin: 36px 0;
@@ -1040,17 +1055,21 @@
   .content-post:nth-child(n+2)::before {
     content:"";
     display: block;
-    width: 380px;
+    width: 93%;
     height: 3px;
     margin-top: 22px;
     margin-bottom: 41px;
     background-color: #eeeeee;
-     }
+  }
+
+     .content {
+  width: calc(100% - 272px);
+}
 
   .shop {
     box-sizing: border-box;
-    max-width: 698px;
-    padding: 0 15px;
+    width: 100vw;
+    padding: 0 35px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -1078,9 +1097,14 @@
   .shop-item:nth-child(n+3) {
     margin-top: 28px;
   }
-
-  .footer {
-    max-width: 698px;
+.shop-item-image {
+  width: 87%;
+}
+  .shop-item-photo {
+    width: 100%;
+  }
+  .footer-block {
+    margin: 0 35px;
     }
   }
 
@@ -1137,13 +1161,15 @@
   align-items: center;
 }
 
-.title-name {
+.tittle-text {
   width: 330px;
-  font-size: 26px;
   margin: 44px auto 0 auto;
-  line-height: 1.38; 
   }
 
+.title-name {
+  font-size: 26px;
+  line-height: 1.38; 
+}
 .tittle__trends {
   margin-top: 44px;
 }
