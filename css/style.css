@@ -245,7 +245,7 @@
    margin-top: 60px;
  }
   
-.content-image, .content-block {
+.block-image, .content-block {
  max-width: 380px;
  }
   
@@ -998,11 +998,12 @@
   .tittle-text {
     width: 620px;
     margin-top: 105px;
+    line-height: 1.375; 
     }
 
     .title-name {
       font-size: 40px;
-      line-height: 1.375; 
+      
     }
           
   .trends__container {
@@ -1032,8 +1033,8 @@
     }
 
   .content-post {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
     }
 
   .content-image {
@@ -1043,9 +1044,9 @@
    .content-post:nth-child(n+2) {
     margin-top: 0;
      }
-  .content-block {
-    width: 100%;
-    margin-top: 16px;
+
+     .block-image, .content-block {
+    max-width: calc(100% - 30px);
     }
 
   .content-meta {
@@ -1055,7 +1056,7 @@
   .content-post:nth-child(n+2)::before {
     content:"";
     display: block;
-    width: 93%;
+    width: calc(100% - 30px);
     height: 3px;
     margin-top: 22px;
     margin-bottom: 41px;
@@ -1202,6 +1203,10 @@
   margin-top: 44px;
 }
 
+.block-image, .content-block {
+  max-width: 100%;
+  }
+
 .block-image {
   margin-right: 0;
 }
@@ -1252,6 +1257,14 @@
 }
 
 .shop-item {
+  width: 100%;
+}
+
+.shop-item-image {
+  width: 87%;
+}
+
+.shop-item-photo {
   width: 100%;
 }
 
