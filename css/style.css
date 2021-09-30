@@ -1296,8 +1296,8 @@
 
 .popup__container {
   padding: 30px 25px;
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
   margin: auto 0;
 }
   }
