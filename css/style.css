@@ -832,7 +832,7 @@
   top: 0;
   left: 0;
   display: flex;
-  display: none;
+  /*display: none;*/
   }   
     
   .select-label {
@@ -996,12 +996,13 @@
     }
 
   .tittle-text {
-    width: 620px;
+    
     margin-top: 105px;
     line-height: 1.375; 
     }
 
     .title-name {
+      width: 620px;
       font-size: 40px;
       
     }
@@ -1290,14 +1291,15 @@
 }
 
 .popup {
- padding: 0 15px; 
+  padding: 0 15px; 
 }
 
 .popup__container {
   padding: 30px 25px;
+  max-width: 100%;
   width: 100%;
   margin: auto 0;
 }
-        }
+  }
 
         
